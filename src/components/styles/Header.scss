@@ -1,0 +1,118 @@
+.header {
+  width: 100%;
+  // height: fit-content;
+  // border: 2px solid blue;
+  /* background-color: blueviolet; */
+  display: flex;
+  height: 50px;
+  transition: 2s;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: 1px 2px 6px rgba(179, 176, 176, 0.651);
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    // border: 2px solid yellow;
+    .leftNav {
+      display: flex;
+      padding: 0.8rem;
+      /* background-color: red; */
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  .menu {
+    border-right: 2px solid black;
+    display: flex;
+    padding-right: 1rem;
+    /* background-color: red; */
+    align-items: center;
+    height: 100%;
+  }
+  .logo {
+    font-size: 2rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding-left: 1rem;
+    color: orangered;
+  }
+  .rightNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-right: 2rem;
+    // border: 2px solid red;
+    .icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        // border: 2px solid blue;
+        color: grey;
+    }
+  }
+  .icon:hover {
+    color: orangered;
+    cursor: pointer;
+  }
+  .navList {
+    display: flex;
+    background-color: orangered;
+    padding-top: 0.5rem;
+    // transform: translateY(0);
+    align-items: center;
+    border-top: 1px solid rgb(167, 2, 2);
+    /* opacity: 0; */
+    /* height: 0; */
+  }
+
+  .navList.active {
+    opacity: 1;
+  }
+
+  .navList-ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    /* background-color: red; */
+    position: relative;
+  }
+
+  .home-arrow {
+    /* position: absolute; */
+    /* top: 3.4rem; */
+    /* left: 5.5rem; */
+    color: black;
+  }
+  a {
+    text-decoration: none;
+    /* background-color: blue; */
+    width: fit-content;
+    height: 100%;
+    padding: 0 2rem;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a:hover {
+    color: grey;
+  }
+}
+
+.shownavlist {
+  height: 120px;
+  transition: 2s;
+  z-index: 100;
+}
+
+/* #arrow-down{
+    background-color: green;
+    margin-top: 5px;
+} */
